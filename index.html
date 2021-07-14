@@ -1,0 +1,254 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arenta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <img src="img/logo.svg" alt="" class="logo">
+                <nav>
+                    <img src="img/notes.svg" alt="">
+                    <img src="img/reg.svg" alt="" class="reg">
+                </nav>
+            </header>
+            <main>
+                <section>
+                    <div class="mobile__filtres">
+                        <div>
+                            <img src="img/filtres.png" alt="">
+                            <p>Фильтры</p>
+                        </div>
+                        <div>
+                            <img src="img/karta.png" class="karta">
+                            <p class="pokazat">Показать на карте</p>
+                        </div>
+                    </div>
+                    <div class="mobile__filtres__container">
+                        <div class="filtres__header">
+                            <img src="img/arrow-left.svg" class="arrow">
+                            <p>Фильтры</p>
+                            <img src="img/krest.svg" class="krest">
+                        </div>
+                        <div>Тип помещения</div>
+                        <div>Город</div>
+                        <div>Время</div>
+                        <div>Дата</div>
+                    </div>
+                    <div class="filtres">
+                        <div class="filtres__container">
+                            <div>
+                                <select name="" id="">
+                                    <option value="1">Бьюти-коворкинги</option>
+                                    <option value="2">Столярные коворкинги</option>
+                                    <option value="3">Швейные коворкинги</option>
+                                </select>  
+                            </div>
+                            <div class="calendar__cont">
+                                <p>12 янв 2020</p>
+                                <img src="img/calendar.png" alt="" class="calendar">
+                            </div>
+                            <div>
+                                <select>
+                                    <option value="1">Москва</option>
+                                    <option value="2">Санкт-петербург</option>
+                                    <option value="3">Воронеж</option>
+                                </select>
+                            </div>
+                            <div class="cost_wrapper">
+                                <p>1 500 - 2 000 ₽ /час </p>
+                                <img src="img/Vector.svg" class="cost_img">
+                            </div>
+                            <div class="dop__filtres">Еще фильтры</div>
+                            <div>Показать 231 обьектов</div>
+                        </div>
+                    </div>
+                    <div class="cost">
+						<div class="min">
+							<input type="nubmer" name="mincost" placeholder="от" class="min">
+						</div>
+						<div class="max">
+							<input type="nubmer" name="maxcost" placeholder="до" class="max">
+						</div>
+					</div>
+                    <section class="calendar__">
+                        <div class="month">
+                            <ul>
+                              <li class="prev">&#10094;</li>
+                              <li class="next">&#10095;</li>
+                              <li>Январь<br><span style="font-size:18px">2020</span></li>
+                            </ul>
+                          </div>
+                          
+                          <ul class="weekdays">
+                            <li>Mo</li>
+                            <li>Tu</li>
+                            <li>We</li>
+                            <li>Th</li>
+                            <li>Fr</li>
+                            <li>Sa</li>
+                            <li>Su</li>
+                          </ul>
+                          
+                          <ul class="days">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li><span class="active">12</span></li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20</li>
+                            <li>21</li>
+                            <li>22</li>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>26</li>
+                            <li>27</li>
+                            <li>28</li>
+                            <li>29</li>
+                            <li>30</li>
+                            <li>31</li>
+                          </ul>
+                    </section>
+                    
+                </section>
+            </main>
+        </div>
+    </div>
+    <div class="popup__login">
+		<div class="popup__login__container">
+			<img src="img/logo2.svg">
+			<img src="img/krest.svg" class="close">
+			<h2>Вход или регистрация</h2>
+			<h6>Номер телефона</h6>
+			<input type="nubmer" name="nubmer" value="+7" id="input" minlength="9">
+			<button>Продолжить</button>
+		</div>
+	</div>
+    <div class="popup__dop__filtres">
+        <div class="popup__dop__filtres__container">
+            <form action="url">
+            <h2>Другие фильтры</h2>
+            <img src="img/krest.svg" class="close2">
+            <div class="types">
+                <p>Тип кабинета</p>
+                <div class="types__radio">
+                    <div>
+                        <input type="radio" name="type" id="type1" class="custom-radio">
+                        <label for="type1">Для визажиста</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="type" id="type2" checked class="custom-radio">
+                        <label for="type2">Для парикмахера</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="type" id="type3" class="custom-radio">
+                        <label for="type3">Для мастера маникюра</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="type" id="type4" class="custom-radio">
+                        <label for="type4">Для мастера педикюра</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="type" id="type5" class="custom-radio">
+                        <label for="type5">Для массажиста</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="type" id="type6" class="custom-radio">
+                        <label for="type6">Для косметолога</label>
+                    </div>
+                </div>
+            </div>
+            <div class="okrug">
+                <p>Округ</p>
+                <div class="buttons">
+                    <div class="button1">
+                        <input type="radio" name="button" id="button1">
+                        <label for="button1">Внутри садового кольца</label>
+                    </div>
+                    <div class="button2">
+                        <input type="radio" name="button" id="button2">
+                        <label for="button2">Внутри ТТК</label>
+                    </div>
+                    <div class="button3">
+                        <input type="radio" name="button" id="button3">
+                        <label for="button3">Север</label>
+                    </div>
+                    <div class="button4">
+                        <input type="radio" name="button" id="button4">
+                        <label for="button4">Северо-восток</label>
+                    </div>
+                    <div class="button5">
+                        <input type="radio" name="button" id="button5">
+                        <label for="button5">Восток</label>
+                    </div>
+                    <div class="button6">
+                        <input type="radio" name="button" id="button6">
+                        <label for="button6">Юго-восток</label>
+                    </div>
+                    <div class="button7">
+                        <input type="radio" name="button" id="button7">
+                        <label for="button7">Юг</label>
+                    </div>
+                    <div class="button8">
+                        <input type="radio" name="button" id="button8">
+                        <label for="button8">Юго-запад</label>
+                    </div>
+                    <div class="button9">
+                        <input type="radio" name="button" id="button9">
+                        <label for="button9">Запад</label>
+                    </div>
+                    <div class="button10">
+                        <input type="radio" name="button" id="button10">
+                        <label for="button10">Северо-запад</label>
+                    </div>
+                </div>
+            </div>
+            <div class="checkbox">
+                <p>Указать точное время</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+            <div class="plowad">
+                <p>Какая процадь вам нужна?</p>
+                <input type="checkbox" name="plowad" id="1">
+                <label for="1">до 10 м2</label><br>
+                <input type="checkbox" name="plowad" id="2">
+                <label for="2">10-15 м2</label><br>
+                <input type="checkbox" name="plowad" id="3">
+                <label for="3">более 15 м2</label>
+            </div>
+            <div class="dop">
+                <p>Дополнительно</p>
+                <input type="checkbox" id="dop">
+                <label for="dop">Шкафчик для хранения вещей</label>
+            </div>
+            <div class="dop__filtres__footer">
+                <input type="reset" value="Очистить">
+                <a href="#">Показать 231 обьект</a>
+            </div>
+            </form>
+        </div>
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>
